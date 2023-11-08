@@ -8,8 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to curve.space
-      - uses: actions/curvenote-deploy@v1
-    with:
-      pull: true
+        uses: curvenote/action-deploy@v1
         env:
           CURVENOTE_TOKEN: ${{ secrets.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiTHZabVEyeTBZV2NrMVpLZXIyVEx1VUl3cXFwMSIsImlhdCI6MTY5OTQxNDMyMCwiZXhwIjoxNzA3MTkwMzIwLCJhdWQiOiJodHRwczovL2FwaS5jdXJ2ZW5vdGUuY29tL2xvZ2luIiwiaXNzIjoiaHR0cHM6Ly9hcGkuY3VydmVub3RlLmNvbS90b2tlbnMvdXNlciIsInN1YiI6Ikx2Wm1RMnkwWVdjazFaS2VyMlRMdVVJd3FxcDEvaUg5aXVGTHI1NFhsaUlzVHNJQ3IifQ.vEFLE4TPNBJH7gYK7GzL1UUc0Um7FQ8qF8vmtBsjEWw }}
+      - uses: actions/curvenote-deploy@v1
+        with:
+        pull: true
