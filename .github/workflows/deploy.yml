@@ -9,7 +9,7 @@ jobs:
     - name: curvenote push
       uses: curvenote/push-to-curvenote@main
       with:
-        path: notes_202101.md
+        path: my-first-post.md
         project: Team Notes
         article: Notes from Jan 2021
         team: curvenote
