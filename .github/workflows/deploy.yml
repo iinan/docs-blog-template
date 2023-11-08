@@ -7,11 +7,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: curvenote push
-      uses: curvenote/push-to-curvenote@main
+      uses: iinan/docs-blog-template@main
       with:
         path: my-first-post.md
-        project: Team Notes
         article: Notes from Jan 2021
-        team: curvenote
       env:
         CURVENOTE_TOKEN: ${{ secrets.CURVENOTE_TOKEN }}
