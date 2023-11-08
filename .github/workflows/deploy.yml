@@ -1,5 +1,4 @@
 name: Curvenote Deploy
-uses: curvenote/action-deploy@v1.0.2
 on:
   push:
     branches:
